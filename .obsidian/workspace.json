@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-06-20-data-structures-a-new-perspective.md",
+                "file": "_posts/2026-06-20-data-structures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-20-data-structures-a-new-perspective"
+              "title": "2026-06-20-data-structures"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 280.5
   },
   "right": {
     "id": "f5907e5b3b2db951",
@@ -200,8 +200,10 @@
   },
   "active": "2cd9c5a85799b9f5",
   "lastOpenFiles": [
+    "_posts/2026-06-20-data-structures.mddf6qF3.bck",
+    "_posts/2026-06-20-data-structures.mdIw5zyT.bck",
     "index.md",
-    "_posts/2026-06-20-data-structures-a-new-perspective.md",
+    "_posts/2026-06-20-data-structures.md",
     "assets/ll-inserting-new-element-example.png",
     "assets/ll-using-array-example.png",
     "assets/linked-list-using-array-example.png",
