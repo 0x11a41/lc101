@@ -35,8 +35,7 @@
               "title": "2026-06-20-data-structures"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,12 +197,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "2cd9c5a85799b9f5",
+  "active": "93d26b878ac0a29b",
   "lastOpenFiles": [
+    "_posts/2026-06-20-data-structures.md",
+    "index.md",
+    "_posts/2026-06-20-data-structures.mdnnUHWu.bck",
     "_posts/2026-06-20-data-structures.mddf6qF3.bck",
     "_posts/2026-06-20-data-structures.mdIw5zyT.bck",
-    "index.md",
-    "_posts/2026-06-20-data-structures.md",
     "assets/ll-inserting-new-element-example.png",
     "assets/ll-using-array-example.png",
     "assets/linked-list-using-array-example.png",
