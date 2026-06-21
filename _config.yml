@@ -1,12 +1,8 @@
 title: leetcode101
 author: LeetCode 101 Admin Team
 description: >-
-  101 Problems. One community growing together. 
-  We break down complex DSA concepts into simple mental models.
+  101 leetcode problems, One community, growing together. 
 
-remote_theme: pages-themes/hacker@v0.2.0
+theme: jekyll-theme-hacker
+
 show_downloads: false
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
