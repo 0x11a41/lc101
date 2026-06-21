@@ -2,9 +2,13 @@
 layout: post
 title: Data structures
 date: 2026-06-20
-author: Harikrishna Mohan
-categories: [ Concepts ]
-tags: [ Arrays, Basics ]
+author: leetcode101 core team
+categories:
+  - Concepts
+tags:
+  - Arrays
+  - Basics
+author_url: https://github.com/0x11a41
 ---
 When we learn about various data structures, it is easy to get lost in all the complexities and miss a surprisingly simple idea underneath all of them:
 
