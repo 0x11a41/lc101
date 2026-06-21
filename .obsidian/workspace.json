@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "8fb205bb951e2a22",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7dc6dff6fe8fd48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93d26b878ac0a29b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "2cd9c5a85799b9f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-06-20-data-structures-a-new-perspective.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-20-data-structures-a-new-perspective"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "75ba073ccd61565b",
+    "type": "split",
+    "children": [
+      {
+        "id": "65a6756175d54cb1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "484f6e7467b9085c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "080180989805ccc4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4f39f567b0bcc904",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 338.5
+  },
+  "right": {
+    "id": "f5907e5b3b2db951",
+    "type": "split",
+    "children": [
+      {
+        "id": "08c4b15a0d00a16c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04757ca5247b2923",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2026-06-20-data-structures-an-overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2026-06-20-data-structures-an-overview"
+            }
+          },
+          {
+            "id": "a668ccabad8bdbde",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2026-06-20-data-structures-an-overview.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2026-06-20-data-structures-an-overview"
+            }
+          },
+          {
+            "id": "577221d0c2d63b90",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "94382ac930c1b679",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "62de16b3fe00e8b8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2026-06-20-data-structures-an-overview.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2026-06-20-data-structures-an-overview"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "2cd9c5a85799b9f5",
+  "lastOpenFiles": [
+    "index.md",
+    "_posts/2026-06-20-data-structures-a-new-perspective.md",
+    "assets/ll-inserting-new-element-example.png",
+    "assets/ll-using-array-example.png",
+    "assets/linked-list-using-array-example.png",
+    "assets/inserting-at-middle-example.png",
+    "assets/sorted-array-example.png",
+    "assets/unsorted-array-example.png",
+    "assets/line-of-cells.png",
+    "{{.md",
+    "assets"
+  ]
+}
