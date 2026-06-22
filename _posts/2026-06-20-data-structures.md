@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data structures
-date: 2026-06-20
+date: 2026-06-23
 author: leetcode101 core team
 categories:
   - Concepts
@@ -10,11 +10,11 @@ tags:
   - Basics
 author_url: https://github.com/0x11a41
 ---
-When we learn about various data structures, it is easy to get lost in all the complexities and miss a surprisingly simple idea underneath all of them:
+When we learn data structures, it is easy to get our minds lost in all the complexities and miss a surprisingly simple idea underneath all of them:
 
 > *A computer only knows how to read from and write to memory.*
 
-Everything running in a computer is built on top of that memory. So before delving into data structures era, let's start from that fundamental idea and build our intuition step by step.
+Everything running on a computer is built on top of that memory. So before delving into data structures era, let's start from that fundamental idea and build our intuition step by step.
 ## Memory is just an array
 We can think of computer memory as a collection of cells, where each cell is arranged on a line of finite length and store some basic data within it. These cells are labeled using a sequential number called an address.
 <div style="text-align: center; margin: 1rem 0;">
@@ -32,12 +32,12 @@ char data = memory[1];
 memory[3] = data;
 ```
 
-This simple arrangement of memory naturally brings us to the concept of an array in programming. In array, we use an index to point to a location where data is to be read or written. In software terms, computer memory is a large array with indices presented as address. In the end, everything a computer has, runs on this array and, uses the only core functionalities it provides. That is, writing data to an index and reading data from an index.
+This simple arrangement of memory naturally brings us to the concept of an array in programming. In array, we use an index to point to a location where data is to be read or written. In software terms, computer memory is a large array with indices presented as address. In the end, everything a computer has, runs on this array and, uses the only core functionalities it provides. That is, reading data from an index and writing data to an index.
 
 Keeping that perspective in mind, let's understand why do we need data structures at all.
 
 ### The searching problem
-Let us consider an array with many elements, and we need to find a specific element using the fundamental operations we have. Assuming, the elements are not arranged in any order, we will end up searching the entire array until we find that element. This requires a lot of computing if the size of array is large.
+Let us consider an array with many elements, and we need to find a specific element using the fundamental operations we have. Assuming, the elements are not arranged in any order, we mostly will end up searching the entire array until we find that element. This requires a lot of computing if the size of array is large.
 <div style="text-align: center; margin: 1rem 0;">
 <img src="{{ site.baseurl }}/assets/unsorted-array-example.png" style="width: 100%; max-width: 520px; margin: 0 auto;">
 </div>
@@ -52,7 +52,7 @@ By sorting the array, we didn't add any new hardware capabilities. The computer 
 
 ### The insertion problem
 Let's explore this pattern in another scenario.
-Suppose we frequently need to insert new elements at arbitarary positions of an array. Since arrays store its elements sequentially, inserting a single element may require shifting many existing elements one position to the right.
+Suppose we frequently need to insert new elements at arbitary positions of an array. Since arrays store its elements sequentially, inserting a single element may require shifting many existing elements one position to the right.
 <div style="text-align: center; margin: 1rem 0;">
 <img src="{{ site.baseurl }}/assets/inserting-at-middle-example.png" style="width: 100%; max-width: 320px; margin: 0 auto;">
 </div>
@@ -61,11 +61,11 @@ If the array is huge and insertions happen often, this shifting process becomes 
 We can pack multiple data fields into one cell using a user-defined type.  
 ```c
 struct node {
-	int value;
+	int data;
 	int next_node_index;
 };
 ```
-Now each node in the array not only stores its value, but also the index of the next node.
+Now each node in the array not only stores data, but also the index of the next node.
 By following the *next_node_index* field from the starting node, we can reach any node that belongs to the chain of nodes.
 
 <div style="text-align: center; margin: 1rem 0;">
