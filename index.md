@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Problem discussions
+## Problems
 - Week 0
 
 ## Concepts
