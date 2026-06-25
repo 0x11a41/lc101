@@ -3,9 +3,12 @@ layout: default
 title: Home
 ---
 
-## Problems
-- Week 0
+## Posts
 
-## Concepts
-1. [Data structures]({{ site.baseurl }}{% post_url 2026-06-23-data-structures %})
----
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>

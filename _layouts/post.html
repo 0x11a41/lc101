@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">
+	{{ page.date | date: "%d %B %Y" }}
+</p>
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<p class="author-line">
+	posted by
+	{% if page.author_url %}
+	<a href="{{ page.author_url }}">{{ page.author }}</a>
+	{% else %}
+	{{ page.author }}
+	{% endif %}
+</p>
+
+{% if page.tags.size > 0 %}
+<div style="font-size: 0.9rem;">
+	<strong>tags:</strong>
+	{% for tag in page.tags %}
+	{{ tag }}
+	{% endfor %}
+</div>
+{% endif %}
