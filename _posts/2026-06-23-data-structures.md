@@ -4,7 +4,7 @@ title: Data structures
 date: 2026-06-23
 categories: [ Concepts ]
 tags: [ Arrays, Basics ]
-author: hari - lc101
+author: hari
 author_url: https://github.com/0x11a41
 ---
 When we learn about data structures, it is easy to get our minds lost in all the complexities and miss a surprisingly simple idea underneath all of them:
@@ -49,17 +49,17 @@ If the array is huge and insertions happen often, this shifting process becomes 
 
 We can pack multiple data fields into one cell using a user-defined type.  
 ```c
-struct node {
+struct cell {
 	int data;
-	int next_node_index;
+	int next_cell_index;
 };
 ```
-Now each node in the array not only stores data, but also the index of the next node.
-By following the *next_node_index* field from the starting node, we can reach any node that belongs to the chain of nodes.
+Now each cell in the array not only stores data, but also the index of the next cell.
+By following the *next_cell_index* field from the starting index, we can reach any element that belongs to the chain of cells.
 
 <img class="diagram" src="{{ site.baseurl }}/assets/data-structures/ll-using-array-example.png" style="max-width: 420px;">
 
- Using this structure, allows us to place nodes anywhere in the array without worring about sequential ordering of arrays. To insert a new element in the middle, we no longer need to shift half the array. We insert the new node anywhere on the array and simply change a few indices so that the new element becomes part of the chain.
+ Using this structure, allows us to place elements anywhere in the array without worring about sequential ordering of arrays. To insert a new element in the middle, we no longer need to shift half the array. We insert the new cell anywhere on the array and simply change a few indices so that the new element becomes part of the chain.
 <img class="diagram" src="{{ site.baseurl }}/assets/data-structures/ll-inserting-new-element-example.png" style="max-width: 520px;">
 Now inserting an element in the middle is extremely fast. Again, we didn't add any new hardware capabilities. The computer still performs the exact same read and write operations on memory. We only organized the data differently and exploited a new property of that organization.
 
@@ -78,5 +78,3 @@ Trees optimize hierarchical searching.
 Hash tables optimize lookup using keys.
 
 But underneath all of them, the computer is still doing the exact same thing. Everything else is just clever organization.
-
----
