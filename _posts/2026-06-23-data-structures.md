@@ -15,7 +15,7 @@ Everything running on a computer is built on top of that memory. So before delvi
 ## Memory is just an array
 We can think of computer memory as a collection of cells, where each cell is arranged on a line of finite length and store some basic data within it. These cells are labeled using a sequential number called an address.
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/line-of-cells.png" style="max-width: 320px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/line-of-cells.png" style="max: clamp(0, 100%, 320px);">
 </div>
 
 As long as we know the address of a cell, the computer allows us to perform two basic operations.
@@ -36,13 +36,13 @@ Keeping that perspective in mind, let's understand why do we need data structure
 ### The searching problem
 Let us consider an array with many elements, and we need to find a specific element using the fundamental operations we have. Assuming, the elements are not arranged in any order, we mostly will end up searching the entire array until we find that element. This requires a lot of computing if the size of array is large.
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/unsorted-array-example.png" style="max-width: 520px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/unsorted-array-example.png" style="max: clamp(0, 100%, 520px);">
 </div>
 We can reduce this computation significantly by sorting the array in ascending order.
 
 Now suppose we want to find the element 'Z' from the array. Since the array is sorted, just by looking at the last index in the array, we can conclude whether or not 'Z' is present in the array without ever looking anywhere else in the array.
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/sorted-array-example.png" style="max-width: 520px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/sorted-array-example.png" style="max: clamp(0, 100%, 520px);">
 </div>
 
 By sorting the array, we didn't add any new hardware capabilities. The computer still performs the same basic operations we saw earlier. However, by identifying properties of the data stored in the array, we exploited it's ordering; in order to achieve incredibly fast searching speeds.
@@ -51,7 +51,7 @@ By sorting the array, we didn't add any new hardware capabilities. The computer 
 Let's explore this pattern in another scenario.
 Suppose we frequently need to insert new elements at arbitary positions of an array. Since arrays store its elements sequentially, inserting a single element may require shifting many existing elements one position to the right.
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/inserting-at-middle-example.png" style="max-width: 320px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/inserting-at-middle-example.png" style="max: clamp(0, 100%, 320px);">
 </div>
 If the array is huge and insertions happen often, this shifting process becomes expensive.
 
@@ -66,12 +66,12 @@ Now each cell in the array not only stores data, but also the index of the next 
 By following the *next_cell_index* field from the starting index, we can reach any element that belongs to the chain of cells.
 
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/ll-using-array-example.png" style="max-width: 420px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/ll-using-array-example.png" style="max: clamp(0, 100%, 420px);">
 </div>
 
  Using this structure, allows us to place elements anywhere in the array without worring about sequential ordering of arrays. To insert a new element in the middle, we no longer need to shift half the array. We insert the new cell anywhere on the array and simply change a few indices so that the new element becomes part of the chain.
 <div class="diagrams-wrapper">
-	<img src="{{ site.baseurl }}/assets/data-structures/ll-inserting-new-element-example.png" style="max-width: 520px;">
+	<img src="{{ site.baseurl }}/assets/data-structures/ll-inserting-new-element-example.png" style="max: clamp(0, 100%, 520px);">
 </div>
 Now inserting an element in the middle is extremely fast. Again, we didn't add any new hardware capabilities. The computer still performs the exact same read and write operations on memory. We only organized the data differently and exploited a new property of that organization.
 
