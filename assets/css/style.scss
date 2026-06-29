@@ -6,8 +6,10 @@
   display: none !important;
 }
 
-.diagram {
-  display: block;
+.diagrams-wrapper {
   width: 100%;
-  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+

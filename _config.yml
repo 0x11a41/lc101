@@ -3,5 +3,5 @@ author: hari
 description: 101 leetcode problems, One community, growing together. 
 
 theme: jekyll-theme-hacker
-# future: true
+future: true
 show_downloads: false
